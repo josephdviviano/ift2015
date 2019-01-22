@@ -1,0 +1,47 @@
+graph {
+    node [style=rounded]
+
+    /* internal node example */
+    // Format : Object.hashCode() [label=Object.frequency, shape=rectangle, width=.5]
+    1983747920 [label=18, shape=rectangle, width=.5]
+
+    /* edge example */
+    // Format : Object.hashCode() -- Object.left.hashCode() [label=0]
+    // Format : Object.hashCode() -- Object.right.hashCode() [label=1]
+    1983747920 -- 2030562336 [label=0]
+    1983747920 -- 431687835 [label=1]
+
+    2030562336 [label=8, shape=rectangle, width=.5]
+    2030562336 -- 1164175787 [label=0]
+    2030562336 -- 290658609 [label=1]
+    431687835 [label=10, shape=rectangle, width=.5]
+    431687835 -- 1577213552 [label=0]
+    431687835 -- 532445947 [label=1]
+    1164175787 [label=4, shape=rectangle, width=.5]
+    1164175787 -- 1170794006 [label=0]
+    1164175787 -- 1289479439 [label=1]
+    290658609 [label=4, shape=rectangle, width=.5]
+    290658609 -- 6738746 [label=0]
+    290658609 -- 2096171631 [label=1]
+    1577213552 [label="{{'o'|4}}", shape=record]
+    532445947 [label=6, shape=rectangle, width=.5]
+    532445947 -- 2114694065 [label=0]
+    532445947 -- 1844169442 [label=1]
+    1170794006 [label="{{'h'|2}}", shape=record]
+    1289479439 [label=2, shape=rectangle, width=.5]
+    1289479439 -- 1537358694 [label=0]
+    1289479439 -- 804581391 [label=1]
+    6738746 [label="{{'r'|2}}", shape=record]
+    2096171631 [label="{{'W'|2}}", shape=record]
+    2114694065 [label="{{'e'|2}}", shape=record]
+    1844169442 [label=4, shape=rectangle, width=.5]
+    1844169442 -- 209813603 [label=0]
+    1844169442 -- 1057941451 [label=1]
+
+    /* leaves example */
+    // Format : Object.hashCode() [label="{{'Object.symbol'|Object.frequency}}", shape=record]
+    1537358694 [label="{{'s'|1}}", shape=record]
+    804581391 [label="{{'w'|1}}", shape=record]
+    209813603 [label="{{'p'|2}}", shape=record]
+    1057941451 [label="{{' '|2}}", shape=record]
+}
